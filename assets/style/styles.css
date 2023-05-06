@@ -1,7 +1,30 @@
 .banner{
-    background-image: url("../../assets/img/imagen1.jpg");
+    background-image: url("../img/imagen1.jpg");
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
-    padding: 25%;
+    padding: 25% ;
+}
+.body{
+    background-color:antiquewhite;
+}
+
+.menu{
+    background-color: black;
+}
+#tarjeta1{
+    padding: 10px;
+    background-color: rgb(199, 198, 185);
+}
+
+#fila1{
+    margin: 10px;
+}
+
+#fila2{
+    margin: 10px;
+}
+#tarjeta2{
+    padding: 10px;
+    background-color: rgb(224, 238, 143);
 }

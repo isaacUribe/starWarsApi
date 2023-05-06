@@ -10,8 +10,11 @@ buscarStarShips().then(function(respuesta){
         columna.classList.add("col")
 
         let tarjeta = document.createElement("div")
-        tarjeta.classList.add("card",  "shadow")
+        tarjeta.id = "tarjeta1"
+        tarjeta.classList.add("card", "h-100" ,"shadow")
 
+        let img = document.createElement("img")
+        img.src = "../assets/img/starships/imagen1.jpg"
 
         let name = document.createElement("h3")
         name.classList.add("card-title")
@@ -32,6 +35,7 @@ buscarStarShips().then(function(respuesta){
 
         fila1.appendChild(columna)
         columna.appendChild(tarjeta)
+        tarjeta.appendChild(img)
         tarjeta.appendChild(name)
         tarjeta.appendChild(model)
         tarjeta.appendChild(manufacturer)
@@ -51,7 +55,11 @@ buscarPlanetas().then(function(respuesta){
         columna.classList.add("col")
 
         let tarjeta = document.createElement("div")
-        tarjeta.classList.add("card",  "shadow")
+        tarjeta.id = "tarjeta2"
+        tarjeta.classList.add("card", "h-100", "shadow")
+
+        let img = document.createElement("img")
+        img.src = "../assets/img/planetas/imagen2.jpg"
 
         let name = document.createElement("h3")
         name.classList.add("card-title")
@@ -71,6 +79,7 @@ buscarPlanetas().then(function(respuesta){
 
         fila2.appendChild(columna)
         columna.appendChild(tarjeta)
+        tarjeta.appendChild(img)
         tarjeta.appendChild(name)
         tarjeta.appendChild(diametro)
         tarjeta.appendChild(clima)
